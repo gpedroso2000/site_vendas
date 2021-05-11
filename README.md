@@ -2,6 +2,8 @@
 
 .Meu primeiro proejto de um site/catálogo, onde o usuário pode visulizar seu produto preferido e através de um formulário atrelado ao Mailchimp, solcitar quais deseja, ou entrar em contato diretamente por uma das redes sociais através dos icones.
 
+.Site totalmente responsivo e adequado para uso em navegadores mobiles.
+
 # FERRAMENTAS
 
 #### .HMTL
