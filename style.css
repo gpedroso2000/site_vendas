@@ -1,0 +1,253 @@
+body {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* IMAGEM DE FUNDO DE TELA */
+
+.fundoimg {
+    background-image: url(./image/fundo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* FUNDO DO CONTEUDO DA PAGINA */
+
+.conteudo {
+    max-width: 80%;
+    background-color: rgb(220, 220, 220, 0.4);
+    margin: auto;
+    
+}
+
+/*SESSÃO FLUTUANTE SOBRE A IMAGEM */
+
+section {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+
+/* TITULO COM NOME E ICONES */
+
+.titulo {
+    background-color: rgb(15, 15, 15, 0.7);
+    max-width: 100%;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+/* TITULO DO CABEÇALHO*/
+
+h1 {
+    color: white;
+    font-family: century, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 3px;
+}
+
+/* IMAGENS/REDE SOCIAS CABEÇALHO */
+
+.tituloimg {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+/* IAMGENS CABEÇALHO */
+
+.iconeimg {
+    width: 30px;
+    height: 30px
+}
+
+/*IMAGEM DO LOGO DA MARCA NO CABEÇALHO*/
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+}
+
+/* DIV AGRUPANDO AS DIVS EM UMA UNICA LINHA */
+
+.prod {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* IMAGENS DOS PRODUTOS*/
+
+.prodimg {
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+/* DIV ENGLOBANDO DESCRIÇÃO, IMAGEM E FORM DO PRODUTO*/
+
+.formcont {
+    border: black 2px solid;
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 25PX;
+    padding-right: 25PX;
+    padding-bottom: 50px;
+    height: 300px;
+    width: 220px;
+    border-radius: 6px;
+}
+
+/* TITULO DOS PRODUTOS */
+
+.escrita {
+    text-align: center;
+    transform: translateY(-15px);
+    font-size: 20px;
+}
+
+/* FORMULARIO ONDE ESTÁ O BOTÃO SOLICITAR PRODUTOR */
+.formu {
+    transform: translateY(30px);
+    text-align: center;
+}
+
+/* BOTÃO DE SOLICITAR PRODUTO */
+
+.botao {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/*BOTAO AO PASSAR O MOUSE */
+
+.botao:hover {
+    background-color: rgb(220, 220, 220, 0.4);
+}
+
+/*FORMULARIO ABAIXO DOS PRODUTOS */
+
+.formstyle {
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+/*TITULO DO FORMULARIO */
+
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+input {
+    padding-left: 10px;
+    font-size: 18px;
+    width: 370px;
+    height: 35px;
+    margin-bottom: 7px;
+    border-radius: 6px;
+    box-shadow: 3px 3px black;
+}
+
+textarea {
+    padding-left: 10px;
+    font-size: 18px;
+    width: 370px;
+    height: 150px;
+    box-shadow: 3px 3px black;
+    border-radius: 6px;
+    margin-bottom: 7px;
+}
+
+/* BOTÃO FORMULARIO*/
+
+input[type="submit"] {
+    background-color: black;
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* BOTÃO FORMULARIO */
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+
+/*RODAPÉ*/
+
+.fim {
+    font-size: 18px;
+    background-color: rgb(220, 220, 220);
+    color: black;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 970px){
+
+    .contCell{
+        margin-bottom:35px ;
+    }
+    
+    .conteudo{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+
+    
+    input {
+        width: 100%;
+       
+       
+    }
+    
+    textarea {
+        width: 100%;
+    
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    h1{
+        display: none ;
+    }
+
+}
